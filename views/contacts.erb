@@ -1,15 +1,14 @@
-<h1>Welcome to <%= @crm_app_name %></h1>
+<!-- <h1>Welcome to <%= @crm_app_name %></h1>
 <p>Main menu</p>
 <ul>
   <li><a href="/contacts">View all Contacts</a></li>
   <li><a href="/contacts/new">Add a New Contact</a></li>
   <!-- please complete me with links to other actions -->
-</ul>
+<!-- </ul> -->
 <h1>All Contacts</h1>
 
 <ul>
-	<!-- <li>First Name  Last Name  Email  Position</li> -->
-	<% @contacts.each do |contact| %>
+	<% $rolodex.contacts.each do |contact| %>
 		<li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %></li>
 	<% end %>
 </ul>
