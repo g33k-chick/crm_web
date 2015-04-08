@@ -10,10 +10,12 @@ get '/' do
 end
 
 get '/contacts' do
-  erb :contacts
+	@crm_app_name = "My CRM"
+  	erb :contacts
 end
 
 get '/contacts/new' do
+	@crm_app_name = "My CRM"
 	erb :new_contact
 end
 
