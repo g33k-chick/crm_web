@@ -5,4 +5,11 @@
   <li><a href="/contacts/new">Add a New Contact</a></li>
   <!-- please complete me with links to other actions -->
 </ul>
-<h1>Contacts</h1>
+<h1>All Contacts</h1>
+
+<ul>
+	<!-- <li>First Name  Last Name  Email  Position</li> -->
+	<% @contacts.each do |contact| %>
+		<li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %></li>
+	<% end %>
+</ul>
