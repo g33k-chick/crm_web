@@ -1,17 +1,21 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
   <head>
 	<title>My CRM website</title>
 	<link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-
-		<ul>
-		  <li><a href="/">Home</a></li>
-		  <li><a href="/contacts">View all Contacts</a></li>
-		  <li><a href="/contacts/new">Add new Contacts</a></li>
-		</ul>
-
-	   <%= yield %>
+  <body style="background-color: #CEF6F5">
+  	<header>
+  		<h1 style="color:teal; font-family:cursive">Melissa's Contact Manager</h1>
+  		<nav>
+  			<ul>
+			  	<li><a href="/">Home</a></li>
+			  	<li><a href="/contacts">View all Contacts</a></li>
+			  	<li><a href="/contacts/new">Add new Contacts</a></li>
+				</ul>
+			</nav>
+  	</header>
+	  <%= yield %>
+	  <footer> <h6>&copy Ridiculous Works</h6></footer>
   </body>
 </html>
