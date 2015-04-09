@@ -7,11 +7,4 @@ class Contact
 		@email = email
 		@note = note
 	end
-
-	def to_s
-		puts "First Name : #{@first_name} "
-		puts "Last Name : #{@last_name} "
-		puts "Email : #{@email} "
-		puts "Note : #{@note} "
-	end
 end

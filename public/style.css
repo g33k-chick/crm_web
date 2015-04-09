@@ -1,0 +1,48 @@
+body {
+	background-color: #CEF6F5
+	}
+
+h1 {
+	text-align: center;
+	color: teal;
+	font-family: cursive;
+	font-size: 75px
+	text-shadow: 2px 2px #00476B;
+}
+
+header {
+	height: 140px;
+	background-color: #19A3D1;
+	margin: 20px;
+	vertical-align: auto;
+}
+
+img {
+	height:50px;
+	width:50px;
+}
+
+article {
+	margin-right: 20px;
+	width: 600px;
+	height: auto;
+	float: right;
+}
+
+a {
+	color: blue;
+	font-family: Arial;
+	font-size: 25x;
+}
+
+.sidebar {
+	margin-right: 20px;
+	width: 200px;
+	float: left;
+}
+
+footer {
+	height: 40px;
+	margin: 20px;
+	clear: both;
+}
