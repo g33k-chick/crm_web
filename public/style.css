@@ -48,8 +48,8 @@ a {
 	float: left;
 }
 
-.container-right {
-	margin-right: 20px;
+.container {
+	margin: 20px;
 }
 
 footer {
