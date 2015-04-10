@@ -3,10 +3,10 @@ require_relative 'rolodex'
 require 'sinatra'
 
 $rolodex = Rolodex.new
-@@rolodex = Rolodex.new
+# @@rolodex = Rolodex.new
 
 # Temporary fake data so that we always find contact with id 1000.
-@@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
+# @@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
 
 
 get '/' do
@@ -21,8 +21,8 @@ get '/contacts/new' do
 	erb :new_contact
 end
 
-get "/contacts/1000" do
-  @contact = @@rolodex.find(1000)
+get "/contacts/:id" do
+  @contact = $rolodex.find(params[:id].to_i)
   erb :show_contact
 end
 
