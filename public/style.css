@@ -6,15 +6,22 @@ h1 {
 	text-align: center;
 	color: #ffff66;
 	font-family: cursive;
-	font-size: 75px
-	text-shadow: 2px 2px #00476B;
+	font-size: 100px
+	text-shadow: 5px 5px #00476B;
 }
+
+h2 {
+	text-align: center;
+	color: navy blue;
+	font-family: garamond;
+}
+
 nav {
 	text-align: center;
 }
 
 header {
-	height: 140px;
+	height: 120px;
 	background-color: #19A3D1;
 	margin: 20px;
 	vertical-align: auto;
@@ -26,10 +33,7 @@ img {
 }
 
 article {
-	margin-right: 20px;
-	width: 600px;
-	height: auto;
-	float: right;
+	font-family: garamond;
 }
 
 a {
@@ -42,6 +46,10 @@ a {
 	margin-right: 20px;
 	width: 200px;
 	float: left;
+}
+
+.container-right {
+	margin-right: 20px;
 }
 
 footer {
