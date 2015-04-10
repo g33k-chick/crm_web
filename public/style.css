@@ -4,10 +4,13 @@ body {
 
 h1 {
 	text-align: center;
-	color: teal;
+	color: #ffff66;
 	font-family: cursive;
 	font-size: 75px
 	text-shadow: 2px 2px #00476B;
+}
+nav {
+	text-align: center;
 }
 
 header {
