@@ -21,7 +21,7 @@ get '/contacts/new' do
 	erb :new_contact
 end
 
-get "/contacts/:id" do
+get '/contacts/:id' do
   @contact = $rolodex.find(params[:id].to_i)
   if @contact
   	erb :show_contact
@@ -30,7 +30,7 @@ get "/contacts/:id" do
   end
 end
 
-get "/contacts/:id/edit" do
+get '/contacts/:id/edit' do
 	@contact = $rolodex.find(params[:id].to_i)
 	if @contact
 		erb :edit_contact
@@ -39,15 +39,14 @@ get "/contacts/:id/edit" do
 	end
 end
 
-put "/contacts/id" do
+put '/contacts/:id' do
 	@contact = $rolodex.find(params[:id].to_i)
 	if @contact
 		@contact.first_name = params[:first_name]
 		@contact.last_name = params[:last_name]
 		@contact.email = params[:email]
 		@contact.note = params[:note]
-
-		redirect to("/contacts")
+		redirect to('/contacts')
 	else
 		raise Sinatra::NotFound
 	end
