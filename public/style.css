@@ -1,19 +1,24 @@
 body {
-	background-color: #CEF6F5
+	background: linear-gradient(to right, #0052A3, #80C4C4);
 	}
 
 h1 {
 	text-align: center;
-	color: #ffff66;
+	color: #70DB70;
 	font-family: cursive;
 	font-size: 100px
-	text-shadow: 5px 5px #00476B;
+	text-shadow: 25px 25px black;
 }
 
 h2 {
 	text-align: center;
-	color: navy blue;
+	color: #005640;
 	font-family: garamond;
+	font-size: 1.75em;
+}
+
+h6 {
+	color: #0099CC;
 }
 
 nav {
@@ -27,19 +32,19 @@ header {
 	vertical-align: auto;
 }
 
-img {
-	height:50px;
-	width:50px;
-}
-
 article {
 	font-family: garamond;
+	color:white;
 }
 
 a {
-	color: blue;
+	color: yellow;
 	font-family: Arial;
 	font-size: 25x;
+}
+
+li {
+	color:white;
 }
 
 .sidebar {
